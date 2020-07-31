@@ -74,11 +74,17 @@ function jogar() {
     }
 
     if (valorvida == 0 || valorpontos == 3){
+    if (valorvida == 0 ){
+        alert ("GAME OVER LOSER!!!")
+    }    else if (valorpontos == 3) {
+        alert ("YOU ARE THE CHAMPION!")
+    }
         valorvida = 3
         valorpontos = 0
         vida.innerHTML = `Vida: ${valorvida}`
         pontos.innerHTML = `Pontos: ${valorpontos}`
-        alert ("Fim de jogo!")
+        
+
     }
 
 
