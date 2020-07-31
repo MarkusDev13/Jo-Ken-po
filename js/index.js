@@ -73,8 +73,12 @@ function jogar() {
         alert ("Selecione uma opção ESSA GALERA XD")
     }
 
-    if (valorvida == 0){
-        alert('Acabou as suas vidas')
+    if (valorvida == 0 || valorpontos == 3){
+        valorvida = 3
+        valorpontos = 0
+        vida.innerHTML = `Vida: ${valorvida}`
+        pontos.innerHTML = `Pontos: ${valorpontos}`
+        alert ("Fim de jogo!")
     }
 
 
@@ -83,6 +87,13 @@ function jogar() {
     alert(`Você selecionou ${jogadorEscolha}, e o CPU escolheu ${computadorEscolha}... logo: ${vencedor}`)
     
 
+}
+
+function reset() {
+  valorvida = 3
+  vida.innerHTML = `Vida: ${valorvida}`
+  valorpontos = 0
+  pontos.innerHTML = `Pontos: ${valorpontos}`
 }
 
 
