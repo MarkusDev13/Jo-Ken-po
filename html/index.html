@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jo-ken-po - Grupo 04</title>
 </head>
 
 <body>
 
-    <input type="radio" name="jogador" onclick="escolhaDoJogador(0)">
-    <input type="radio" name="jogador" onclick="escolhaDoJogador(1)">
-    <input type="radio" name="jogador" onclick="escolhaDoJogador(2)">
+    <h3 id="vida">Vida</h3>
+    <h3 id="pontos">Pontuação</h3>
 
+    <label for="pedra">Pedra</label>
+    <input id="pedra" type="radio" name="jogador" onclick="escolhaDoJogador(0)">
+    
+    <label for="papel">Papel</label>
+    <input id="papel" type="radio" name="jogador" onclick="escolhaDoJogador(1)">
+    
+    <label for="tesoura">Tesoura</label>
+    <input id="tesoura" type="radio" name="jogador" onclick="escolhaDoJogador(2)">
 
 
     <input type="button" value="Jogar" id="jogar" onclick="jogar()">

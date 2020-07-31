@@ -14,12 +14,19 @@ function escolhaDoJogador(escolha) {
 
 }
 
+let vida = document.getElementById('vida')
+let valorvida = 3
+
+vida.innerHTML = `Vida: ${valorvida}`
+
+let pontos = document.getElementById('pontos')
+let valorpontos = 0
+pontos.innerHTML = `Pontos: ${valorpontos}`
 
 function jogar() {
 
     let computadorEscolha = Math.floor(Math.random() * 3)
 
-    
 
     if (computadorEscolha == 0) {
         computadorEscolha = `PEDRA`
@@ -36,31 +43,46 @@ function jogar() {
         if (computadorEscolha == "PEDRA") {
             vencedor = "EMPATE"
         } else if (computadorEscolha == "PAPEL") {
-            vencedor = "COMPUTADOR"
+            vencedor = "Ops, você perdeu!"
+            valorvida--
         } else {
-            vencedor = "JOGADOR"
+            vencedor = "Parabéns, tu ganhou boy!"
+            valorpontos++
         }
     } else if (jogadorEscolha == "PAPEL") {
         if (computadorEscolha == "PEDRA") {
-            vencedor = "JOGADOR"
+            vencedor = "Parabéns, tu ganhou boy!"
+            valorpontos++
         } else if (computadorEscolha == "PAPEL") {
             vencedor = "EMPATE"
         } else {
-            vencedor = "COMPUTADOR"
+            vencedor = "Ops, você perdeu!"
+            valorvida--
         }
     } else if (jogadorEscolha == "TESOURA") {
         if (computadorEscolha == "PEDRA") {
-            vencedor = "COMPUTADOR"
+            vencedor = "Ops, você perdeu!"
+            valorvida--
         } else if (computadorEscolha == "PAPEL") {
-            vencedor = "JOGADOR"
+            vencedor = "Parabéns, tu ganhou boy!"
+            valorpontos++
         } else {
             vencedor = "EMPATE"
         }
     } else {
-        alert ("ERRO INESPERADO")
+        alert ("Selecione uma opção ESSA GALERA XD")
     }
 
-    alert(`${jogadorEscolha} ${computadorEscolha} ${vencedor}`)
+    if (valorvida == 0){
+        alert('Acabou as suas vidas')
+    }
+
+
+    vida.innerHTML = `Vida: ${valorvida}`
+    pontos.innerHTML = `Pontos: ${valorpontos}`
+    alert(`Você selecionou ${jogadorEscolha}, e o CPU escolheu ${computadorEscolha}... logo: ${vencedor}`)
     
 
 }
+
+
