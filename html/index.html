@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jo-ken-po - Grupo 04</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
 </head>
 
 <body>
     <main>
+
+        <section class="modal-vencedor-rodada">
+            <h5 id="resultado-rodada"></h5>
+
+        </section>
+
+        <section class="modal-vencedor-jogo">
+            <div class="fechar-modal" onclick="fecharModal()">X</div>
+            <h5 id="resultado-jogo">
+
+            </h5>
+
+        </section>
 
         <section class="infos">
 
@@ -28,24 +41,34 @@
         </section>
 
         <section class="computador">
-            <h4>Sou computador</h4>
+            <h2>Computador</h2>
+            <div class="opcoes-computador">
+            <img class="pedra-pc" src="../img/pedra.png" alt="pedra" width="50">
+            <img class="papel-pc" src="../img/papel.png" alt="papel" width="50">
+            <img class="tesoura-pc" src="../img/tesoura.png" alt="tesoura" width="50">
+            </div>
         </section>
 
         <section class="jogador">
-            <label for="pedra">Pedra</label>
+            <h2>Você</h2>
+            <div class="opcoes-jogador">
+            <label id="label-pedra" class="label" for="pedra"><img src="../img/pedra.png" alt="pedra"
+                    width="50"></label>
             <input id="pedra" type="radio" name="jogador" onclick="escolhaDoJogador(0)">
 
-            <label for="papel">Papel</label>
+            <label id="label-papel" class="label" for="papel"><img src="../img/papel.png" alt="papel"
+                    width="50"></label>
             <input id="papel" type="radio" name="jogador" onclick="escolhaDoJogador(1)">
 
-            <label for="tesoura">Tesoura</label>
+            <label id="label-tesoura" class="label" for="tesoura"><img src="../img/tesoura.png" alt="tesoura"
+                    width="50"></label>
             <input id="tesoura" type="radio" name="jogador" onclick="escolhaDoJogador(2)">
-
+        </div>
         </section>
 
         <section class="botoes">
-            <input type="button" value="Jogar" id="jogar" onclick="jogar()">
-            <input type="button" value="Reiniciar" id="reiniciar" onclick="reset()">
+            <input class="but-start" type="button" value="Jogar" id="jogar" onclick="jogar()">
+            <input class="but-reset" type="button" value="Reiniciar" id="reiniciar" onclick="reset()">
         </section>
     </main>
 

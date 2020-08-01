@@ -11,7 +11,7 @@
     
     
     background-color: red;
-    box-shadow: 0 0 10px red;
+
     transform: rotate(-45deg);
 
     position: relative;
@@ -22,9 +22,8 @@
     content: "";
     height: 35px;
     width: 35px;
-
     background-color: red;
-    box-shadow: 0 0 10px red;
+   
     border-radius: 50%;
   
     position: absolute;
@@ -50,7 +49,7 @@
     z-index: 2;
     margin-bottom: 7px;
     margin-left:8px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .pontuacao{
@@ -60,9 +59,11 @@
     width: 40px;
     height: 40px;
     border: 5px solid black;
+    margin-bottom: 5px;
     
 }
 #pontos{
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 30px;
+   
+    margin-left: 5px;
 }

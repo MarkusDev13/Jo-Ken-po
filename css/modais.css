@@ -1,0 +1,44 @@
+.modal-vencedor-rodada{
+    position: absolute;
+    top: 45%;
+    width: 90%;
+    height: 40px;
+    
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+} 
+
+#resultado-rodada{
+    text-align: center;
+}
+.modal-vencedor-jogo{
+    position: absolute;
+    top: 25%;
+    width: 90%;
+    height: 320px;
+
+    background-color: white;
+   
+
+} 
+
+.fechar-modal{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background-color: orange;
+    padding: 10px;
+
+}
+#resultado-jogo{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    text-align: center;
+    }

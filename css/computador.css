@@ -1,0 +1,15 @@
+.computador{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: var(--cor-do-computador);
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-computador{
+    padding-top: 10px;
+}
+.pedra-pc, .papel-pc, .tesoura-pc{
+    display: none;
+}

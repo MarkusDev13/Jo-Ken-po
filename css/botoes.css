@@ -1,0 +1,9 @@
+.but-start, .but-reset{
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: orange;
+    border: none;
+}
