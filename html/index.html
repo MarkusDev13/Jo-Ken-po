@@ -5,25 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jo-ken-po - Grupo 04</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
 </head>
 
 <body>
+    <main>
 
-    <h3 id="vida">Vida</h3>
-    <h3 id="pontos">Pontuação</h3>
+        <section class="infos">
 
-    <label for="pedra">Pedra</label>
-    <input id="pedra" type="radio" name="jogador" onclick="escolhaDoJogador(0)">
-    
-    <label for="papel">Papel</label>
-    <input id="papel" type="radio" name="jogador" onclick="escolhaDoJogador(1)">
-    
-    <label for="tesoura">Tesoura</label>
-    <input id="tesoura" type="radio" name="jogador" onclick="escolhaDoJogador(2)">
+            <div class="minhaVida">
+                <div class="coracao">
+                    <h4 id="vida"></h4>
+                </div>
+            </div>
 
+            <div class="meusPontos">
+                <div class="pontuacao">
+                    <h4 id="pontos"></h4>
+                </div>
+            </div>
+        </section>
 
-    <input type="button" value="Jogar" id="jogar" onclick="jogar()">
-    <input type="button" value="Reiniciar" id="reiniciar" onclick="reset()">
+        <section class="computador">
+            <h4>Sou computador</h4>
+        </section>
+
+        <section class="jogador">
+            <label for="pedra">Pedra</label>
+            <input id="pedra" type="radio" name="jogador" onclick="escolhaDoJogador(0)">
+
+            <label for="papel">Papel</label>
+            <input id="papel" type="radio" name="jogador" onclick="escolhaDoJogador(1)">
+
+            <label for="tesoura">Tesoura</label>
+            <input id="tesoura" type="radio" name="jogador" onclick="escolhaDoJogador(2)">
+
+        </section>
+
+        <section class="botoes">
+            <input type="button" value="Jogar" id="jogar" onclick="jogar()">
+            <input type="button" value="Reiniciar" id="reiniciar" onclick="reset()">
+        </section>
+    </main>
 
     <script src="../js/index.js"></script>
 </body>

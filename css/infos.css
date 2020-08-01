@@ -1,0 +1,68 @@
+.minhaVida{
+    margin-right: 40px;
+}
+.coracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height:35px;
+    width: 35px;
+    
+    
+    background-color: red;
+    box-shadow: 0 0 10px red;
+    transform: rotate(-45deg);
+
+    position: relative;
+    
+}
+.coracao:before,
+.coracao:after {
+    content: "";
+    height: 35px;
+    width: 35px;
+
+    background-color: red;
+    box-shadow: 0 0 10px red;
+    border-radius: 50%;
+  
+    position: absolute;
+    
+}
+
+.coracao:before {
+    top: -17.5px;
+}
+
+.coracao:after {
+    left: 17.5px;
+    top:0;
+    z-index: 0;
+    
+}
+
+#vida{
+    color: white;
+    text-align: center;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 7px;
+    margin-left:8px;
+    font-size: 40px;
+}
+
+.pontuacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 5px solid black;
+    
+}
+#pontos{
+    font-size: 40px;
+    margin-bottom: 5px;
+}

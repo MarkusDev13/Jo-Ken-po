@@ -17,11 +17,11 @@ function escolhaDoJogador(escolha) {
 let vida = document.getElementById('vida')
 let valorvida = 3
 
-vida.innerHTML = `Vida: ${valorvida}`
+vida.innerHTML = `${valorvida}`
 
 let pontos = document.getElementById('pontos')
 let valorpontos = 0
-pontos.innerHTML = `Pontos: ${valorpontos}`
+pontos.innerHTML = `${valorpontos}`
 
 function jogar() {
 
@@ -30,6 +30,7 @@ function jogar() {
 
     if (computadorEscolha == 0) {
         computadorEscolha = `PEDRA`
+
     } else if (computadorEscolha == 1) {
         computadorEscolha = `PAPEL`
     } else {
@@ -81,15 +82,15 @@ function jogar() {
     }
         valorvida = 3
         valorpontos = 0
-        vida.innerHTML = `Vida: ${valorvida}`
-        pontos.innerHTML = `Pontos: ${valorpontos}`
+        vida.innerHTML = `${valorvida}`
+        pontos.innerHTML = `${valorpontos}`
         
 
     }
 
 
-    vida.innerHTML = `Vida: ${valorvida}`
-    pontos.innerHTML = `Pontos: ${valorpontos}`
+    vida.innerHTML = `${valorvida}`
+    pontos.innerHTML = `${valorpontos}`
     alert(`Você selecionou ${jogadorEscolha}, e o CPU escolheu ${computadorEscolha}... logo: ${vencedor}`)
     
 
@@ -97,9 +98,9 @@ function jogar() {
 
 function reset() {
   valorvida = 3
-  vida.innerHTML = `Vida: ${valorvida}`
+  vida.innerHTML = `${valorvida}`
   valorpontos = 0
-  pontos.innerHTML = `Pontos: ${valorpontos}`
+  pontos.innerHTML = `${valorpontos}`
 }
 
 
