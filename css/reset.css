@@ -22,7 +22,7 @@ body{
 
     width:100%;
     height:100vh;
-   
+    min-height:500px;
     background:linear-gradient(0deg, var(--cor-do-backjogador) 50% , var(--cor-do-backcomputador) 50%)
     
 }

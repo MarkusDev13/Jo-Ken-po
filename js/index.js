@@ -124,6 +124,9 @@ function reset() {
   vencedorRodada.innerHTML = "";
   mostrarModal = document.getElementsByClassName('modal-vencedor-jogo')[0].style.display = "none"
   document.getElementsByClassName("but-start")[0].style.display = "block"
+  document.getElementsByClassName(`pedra-pc`)[0].style.display = "none"
+  document.getElementsByClassName(`papel-pc`)[0].style.display = "none"
+  document.getElementsByClassName(`tesoura-pc`)[0].style.display = "none"
 
 }
 

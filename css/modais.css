@@ -19,10 +19,7 @@
     top: 25%;
     width: 90%;
     height: 320px;
-
     background-color: white;
-   
-
 } 
 
 .fechar-modal{
@@ -37,8 +34,8 @@
     width: 80%;
     height: 100%;
     margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     }
